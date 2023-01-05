@@ -61,12 +61,14 @@ We understand you cannot control how media assets like videos and images are sen
 - Live webpage: 
 
 ## Wireframes
-- React.JS - JavaScript user interface library framework
-- - Redux - State management framework
+
+Pincil drawn wireframe.jpeg
 
 ## Technologies used
 The Project is mainly build using Javascript language with some additional languages necessary for React app such as Html and CSS. 
-- Javascript- Scripted language
+- 
+- React.JS - JavaScript user interface library 
+- Redux - State management frameworkJavascript- Scripted language
 - Html - structured languange
 - CSS - language for the designing 
 - VScode - code editor
