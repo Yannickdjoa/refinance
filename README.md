@@ -62,7 +62,7 @@ We understand you cannot control how media assets like videos and images are sen
 
 ## Wireframes
 
-C:\Projects\Codecademy Projects\refinance\src\app\images
+https://github.com/Yannickdjoa/refinance/blob/master/src/app/images/wireframe.jpeg
 
 ## Technologies used
 The Project is mainly build using Javascript language with some additional languages necessary for React app such as Html and CSS. 
