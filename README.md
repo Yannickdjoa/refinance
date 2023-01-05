@@ -1,10 +1,14 @@
-# refinance app
+# Refinance app
 
 ## Project Overview
 
-This is a portfolio project I did as part of my full stack engineer course on Codecademy. It is a React-Redux app that allows the user to view Reddit posts from various subreddits orientated to the finance field. The app requires authentication with the user's Reddit account to be used, and mainly displays posts containing finance topics.
+### Introduction
 
-## Project Requirements
+This is a portfolio project I did as part of my full stack engineer course on Codecademy. The goal of the project was to
+showcase all previews skills and technologies learned until this point on the path (HTML / CSS, JavaScript, React, Redux, Git and Github Projects, Command line, Wireframes).
+It is a React-Redux app that allows the user to view Reddit posts from various subreddits orientated to the finance field. The app requires authentication with the user's Reddit account to be used, and mainly displays posts containing finance topics.
+
+### Project Requirements
 
 - Build the application using React and Redux
 
@@ -51,17 +55,50 @@ We understand you cannot control how media assets like videos and images are sen
 
 - OPTIONAL: Make your application a progressive web app
 
+### Project Links
+
+- Repository: https://github.com/Yannickdjoa/refinance
+- Live webpage: 
+
 ## Wireframes
+- React.JS - JavaScript user interface library framework
+- - Redux - State management framework
 
 ## Technologies used
-
-
+The Project is mainly build using Javascript language with some additional languages necessary for React app such as Html and CSS. 
+- Javascript- Scripted language
+- Html - structured languange
+- CSS - language for the designing 
+- VScode - code editor
+- React-Redux - React bindings for Redux
+- Redux Toolkit - Redux development utility library
+- Jest - JavaScript testing framework
+- React Testing Library - React testing utility
+- Netlify - live deployment tool
 
 ## Features
 
-## Authors and acknowledgment
-Show your appreciation to those who have contributed to the project.
+Features will be add as my knowledge and practice of the front-end will improve. 
+First wave features will include:
+- Drop-down list of subrefinance: able to dynamically display the name of the current subrefinance
+- Possibility to search subrefinance topics
+- possibility to Search topics in of redit 
+- suggestions to users based on topics (hot, opportunities, news)
+- Ability to interact with posts and comments (upvote, downvote, save, etc.)
+- Ability to search for posts and comments
+- Ability to view user profiles
+- Interaction with subrefinance topics
 
-## License
+## Author
+
+- Github: https://github.com/Yannickdjoa
+- Webpage: 
+- Tweeter: https://twitter.com/DjoaYannick
+- LinkedIn: https://www.linkedin.com/in/yannick-djoa-4319a317/
 
 ## Roadmap
+
+- Wave 1: current developed features (see features)
+- Wave 2: additional features 
+    - Ability to like and dislike pictures
+    - User Profile: with possibility tp signup, login/logout and profile settings
