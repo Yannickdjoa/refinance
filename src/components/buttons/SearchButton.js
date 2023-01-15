@@ -1,23 +1,24 @@
 import React from 'react';
+import { BiSearch } from "react-icons/bi";
+import "./buttons.css";
 
 export const SearchButton=()=> {
     const handleSearchChange='';
     return (
-        <div>
+        <div className='btn'>
             <form method='POST' action=''>
-
                 <label for='search'>
                     <input
                         type='text'
                         name='search'
-                        value='search...'
+                        value= 'Search...'
                         id='search'
                         onChange={handleSearchChange}
                     />
                     
                 </label>
-                <button className='search-button' type='submit'>
-                    <img src='../../../../assets/images/searchIcon.jpg' alt='search button'/>
+                <button className='btn-icon' type='submit'>
+                    <BiSearch/>
                 </button>
                 
             </form>

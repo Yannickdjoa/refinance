@@ -1,0 +1,18 @@
+.btn{
+    border: none;
+    background: transparent;
+    
+    width: 50vw;
+}
+.btn-icon{
+    border: none;
+    background: transparent;
+    padding: 5px 12px;
+    border-radius: 5px;
+    transition: 0.3s all ease-out;
+    background-color: rgb(137, 222, 80);
+    cursor: pointer;
+}
+.btn-icon:hover{
+    background-color: rgba(243, 10, 49, 0.888);
+}

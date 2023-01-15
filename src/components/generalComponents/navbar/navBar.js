@@ -1,17 +1,32 @@
-import React from 'react';
-import {SearchButton} from "../../dummyComponents/button/searchButton/SearchButton";
-import {SettingButton} from "../../dummyComponents/button/settingButton/SettingButton";
-import {LoginButon}  from "../../dummyComponents/button/login-signup/LoginButon";
-import {LogoSetting} from '../../dummyComponents/button/imgButton/LogoSetting';
+import { FaRedditAlien } from "react-icons/fa";
+import { Link } from "react-router-dom";
+import "./navbar.css";
+import { navItems } from "../../NavbarItems";
+import { SearchButton } from "../../buttons/SearchButton";
 
-function NavBar(props) {
+const NavBar= ()=> {
+
     return (
-        <React.Fragment>
-            <LogoSetting/>
+        <>
+          <nav className='nav-bar'>
+            <Link to='./' className='navbar-logo'>
+                <FaRedditAlien/>
+                Refinance
+            </Link>
             <SearchButton/>
-            <SettingButton/>
-            <LoginButon/>
-        </React.Fragment>
+            <ul className='navbar-items'>
+            {navItems.map(item=>{
+
+                    return(
+                        <li key={item.id}  className={item.cName}>
+                            <Link to={item.path}>{item.title}</Link>
+                        </li>
+                    );
+                })}
+            </ul>
+          </nav>
+          
+        </>
     );
 }
 
