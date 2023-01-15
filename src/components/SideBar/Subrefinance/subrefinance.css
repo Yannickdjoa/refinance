@@ -1,0 +1,53 @@
+*{
+    margin:0;
+    padding:0;
+    text-decoration: none;
+}
+.container{
+    display:flex;
+}
+main{
+    width: 100%;
+    padding: 20px;
+    
+}
+
+.sidebar-subref{
+    background: rgb(60, 179, 151);
+    color: #fff;
+    height: 100vh;
+    width: 220px;
+    transition: all 0.5s;
+    display: flex;
+    align-items: right;
+    flex-direction: column;
+   
+    
+}
+.subrefinance-btn{
+    padding: 10px 15px;
+    text-align: center;
+    cursor: pointer;
+
+}
+.subrefinance-btn:hover{
+    background: rgba(243, 10, 49, 0.888);
+}
+
+.sedebar-item{
+    display: flex;
+    color: #fff;
+    transition: all 0.5s;
+    padding: 6px 50px;
+    gap: 15px;
+
+}
+.sedebar-item:hover{
+    background: rgba(243, 10, 49, 0.888);
+    color: #000;
+    transition: all 0.5s;
+}
+.active{
+    background: rgba(243, 10, 49, 0.888);
+    color: #000;
+}

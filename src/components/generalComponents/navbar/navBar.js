@@ -1,7 +1,7 @@
 import { FaRedditAlien } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import "./navbar.css";
-import { navItems } from "../../NavbarItems";
+import { navItems } from "../../itemsList";
 import { SearchButton } from "../../buttons/SearchButton";
 
 const NavBar= ()=> {
@@ -19,7 +19,7 @@ const NavBar= ()=> {
 
                     return(
                         <li key={item.id}  className={item.cName}>
-                            <Link to={item.path}>{item.title}</Link>
+                            <Link to={item.path}>{item.icon}{item.title}</Link>
                         </li>
                     );
                 })}
