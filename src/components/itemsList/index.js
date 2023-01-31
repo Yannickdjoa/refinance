@@ -43,8 +43,8 @@ export const profileItems=[
 export const SideBarItems=[
     {
         id: 1,
-        title:'FinanceMarket',
-        path: './financeMarket',
+        title:'Finance Market',
+        path: './postsList',
         cName: 'sedebar-item',
     },
     {

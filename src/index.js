@@ -5,14 +5,21 @@ import { store } from './app/store';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import './index.css';
+import {  BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { fetchPostsByTitle } from './utils/Api';
 
 const container = document.getElementById('root');
 const root = createRoot(container);
+store.dispatch(fetchPostsByTitle());
 
 root.render(
   <React.StrictMode>
     <Provider store={store}>
-      <App />
+      <Router>
+        <Routes>
+          <Route path='/*' element={ <App /> }/>
+        </Routes>
+      </Router>
     </Provider>
   </React.StrictMode>
 );

@@ -1,9 +1,12 @@
 import React from 'react';
 
+
 const Crypto = () => {
+    
+
     return (
         <div>
-            <h1>crypto market</h1>
+            <h1>hello world</h1>
         </div>
     );
 };
