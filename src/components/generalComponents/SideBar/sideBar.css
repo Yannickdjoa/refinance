@@ -21,7 +21,7 @@ main{
     display: flex;
     align-items: right;
     flex-direction: column;
-   
+    overflow: hidden;
     
 }
 .subrefinance-btn{
@@ -38,7 +38,7 @@ main{
     display: flex;
     color: #fff;
     transition: all 0.5s;
-    padding: 6px 50px;
+    padding: 6px 15px;
     gap: 15px;
 
 }
@@ -48,6 +48,10 @@ main{
     transition: all 0.5s;
 }
 .active{
-    background: rgba(243, 10, 49, 0.888);
+    background: rgba(26, 243, 10, 0.888);
     color: #000;
+}
+.sidebar-icon, .sidebar-titles{
+    font-size: 20px;
+
 }

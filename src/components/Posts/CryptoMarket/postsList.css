@@ -1,0 +1,25 @@
+
+.article-view{
+    
+    padding: 1rem 1.5rem;
+    border-radius: 1rem;
+    border-style: groove;
+    background-color: rgb(223, 234, 236);
+
+}
+
+.article-title{
+    font-size: 1.5em;
+
+}
+
+.aricle-body{
+    font-size: 1em;
+
+}
+@media only screen and (max-width: 768px) {
+	.article-view {
+		grid-column: 1/-1;
+		grid-row: 3/5;
+	}
+}

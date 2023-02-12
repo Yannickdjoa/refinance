@@ -1,5 +1,5 @@
 import { createSlice } from '@reduxjs/toolkit'
-import { fetchPostsByTitle } from '../../utils/Api';
+import { fetchPostsByTitle } from '../../../utils/Api';
 
 
 export const postsSlice = createSlice({
@@ -7,7 +7,8 @@ export const postsSlice = createSlice({
     initialState:{
         posts: [],
         status: '200',
-        error: null
+        error: null,
+        
     },
     reducers:{
         setSelectedPost: (state, action) => {
@@ -16,14 +17,14 @@ export const postsSlice = createSlice({
     },
     extraReducers(builder) {
         builder
-            .addCase(fetchPostsByTitle.pending, (state, action)=>{
+            .addCase(fetchPostsByTitle.pending, (state)=>{
                 state.status= 'loading'
             })
             .addCase(fetchPostsByTitle.fulfilled, (state, action)=>{
                 state.status= 'succeeded';
                 state.posts= action.payload;
             })
-            .addCase(fetchPostsByTitle.rejected, (state, action)=>{
+            .addCase(fetchPostsByTitle.rejected, (state)=>{
                 state.status= 'failed'
             })
        

@@ -1,12 +1,12 @@
 import { configureStore } from '@reduxjs/toolkit';
-import postsReducer from "../features/posts/postsSlice";
-import researchReducer from "../features/Research/researchSlice";
+import postsReducer from "../components/Posts/CryptoMarket/CryptoMarketSlice";
+import researchReducer from "../components/Search/researchSlice";
 
 
 
 export const store = configureStore({
   reducer: {
     posts: postsReducer,
-    research: researchReducer, 
+    search: researchReducer, 
   },
 });

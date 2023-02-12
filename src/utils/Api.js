@@ -23,10 +23,11 @@ export const fetchPostsByTitle= createAsyncThunk(
 export const searchPosts= createAsyncThunk(
     "search/searchPosts",
     async(query)=>{
-        const response= await fetch(`https://www.reddit.com/subreddits/search.json?q=${query}&limit=25`);
-        console.log(response);
+        const response= await fetch(`https://www.reddit.com/subreddits/search.json?q=${query}&limit=50`);
         const data= await response.json();
-        return data.data.children.map((subreddit)=>subreddit.data);
+
+        console.log(data)
+        return data.data.children.map();
     }
 )
 
