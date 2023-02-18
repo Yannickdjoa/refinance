@@ -1,10 +1,10 @@
 import React, { useState } from 'react';
 import { NavLink } from "react-router-dom";
 import './sideBar.css';
-import { SideBarItems } from "../itemsList";
+import { SideBarItems } from '../itemsList';
 import { FaBars } from "react-icons/fa";
 
-export const SubRefinance = ({children}) => {
+export const SideBar= ({children}) => {
 
 
     const[isOpen, setIsOpen]= useState(false);
@@ -22,7 +22,7 @@ export const SubRefinance = ({children}) => {
                 {
                     SideBarItems.map((sideItem)=>(
                        (
-                        <NavLink to={sideItem.path} key={sideItem.id} className={sideItem.cName} activeclassName='active'>
+                        <NavLink to={sideItem.path} key={sideItem.id} className={sideItem.cName} activeclassname='active'>
                             <div className='sidebar-icon'>{sideItem.icon}</div>
                             <div className='sidebar-titles' style={{display: isOpen ? "block" : "none"}}>{sideItem.title}</div>
                         </NavLink>

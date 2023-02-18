@@ -16,7 +16,7 @@ export const navItems=[
     {
         id: 1,
         title: 'Home',
-        path: './home',
+        path: './searchPage',
         cName: 'nav-item',
         icon: <AiFillHome/>,
     },
@@ -62,14 +62,14 @@ export const SideBarItems=[
     {
         id: 2,
         title:'Bitcoin News',
-        path: './crypto',
+        path: './bitcoinnews',
         cName: 'sedebar-item',
         icon: <FaBitcoin/>
     },
     {
         id: 3,
         title: 'Relax Time',
-        path: './funnyPictures',
+        path: './relaxation',
         cName: 'sedebar-item',
         icon: <BsFillEmojiLaughingFill/>
     },
@@ -84,28 +84,28 @@ export const SideBarItems=[
     {
         id: 5,
         title:'Game',
-        path: './game',
+        path: './games',
         cName: 'sedebar-item',
         icon: <FaGamepad/>
     },
     {
         id: 6,
         title:'Investments',
-        path: './reachPeople',
+        path: './investments',
         cName: 'sedebar-item',
         icon: <GiTakeMyMoney/>
     },
     {
         id: 7,
         title:'Inspiration',
-        path: './motivation',
+        path: './inspirations',
         cName: 'sedebar-item',
         icon: <GiInspiration/>
     },
     {
         id: 9,
         title:'Money',
-        path: './moneyPictures',
+        path: './money',
         cName: 'sedebar-item',
         icon: <GrMoney/>
     },

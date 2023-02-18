@@ -1,7 +1,7 @@
 import { createSlice } from '@reduxjs/toolkit';
 import { searchPosts } from '../../utils/Api';
 
-const researchSlice = createSlice({
+const searchSlice = createSlice({
     name:"search",
     initialState:{
        query: '',
@@ -43,6 +43,6 @@ export let queryTerm= (state)=>state.search.query;
 export const getSearchStatus= (state)=>state.search.isLoading;
 export const getSearchError= (state)=>state.search.error;
 
-export const {getSearchInfo, clearTerm }= researchSlice.actions;
-export default researchSlice.reducer;
+export const {getSearchInfo, clearTerm }= searchSlice.actions;
+export default searchSlice.reducer;
 
