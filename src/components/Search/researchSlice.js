@@ -4,45 +4,46 @@ import { searchPosts } from '../../utils/Api';
 const searchSlice = createSlice({
     name:"search",
     initialState:{
-       query: '',
+       query:"",
        searchResult: [],
-       isLoading: false,
-       error: false,
+       loading: false,
+       error: null,
 
     },
     reducers:{
-        getSearchInfo: (state, action)=>{
+        setQuery: (state, action)=>{
             state.query= action.payload;
 
         },
-        clearTerm: (state, action) => {
+        clearQuery: (state, action) => {
             state.query = '';
         }
     },
     extraReducers(builder){
         builder
-           .addCase (searchPosts.fulfilled, (state, action) => {
-            state.isLoading = false;
-            state.error = false;
-			state.searchResult = action.payload;
-			
-		   })
-           .addCase( searchPosts.pending, (state) => {
-			state.isLoading = true;
-            state.error = false;
+            .addCase( searchPosts.pending, (state) => {
+            state.loading= true;
+            state.searchResult= [];
+            state.error=null;
            })
-		   .addCase( searchPosts.rejected, (state) => {
-			state.isLoading = false;
-            state.error = true;
-		   })
+           .addCase (searchPosts.fulfilled, (state, action) => {
+            state.loading= false;
+            state.error= null;
+            state.searchResult = action.payload;
+           })
+           
+           .addCase( searchPosts.rejected, (state, action) => {
+            state.loading= false;
+            state.error= action.error.message;
+            state.searchResult= [];
+           });
     },
-})
+});
 
-export let selectResearch= (state)=>state.search.searchResult;
-export let queryTerm= (state)=>state.search.query;
-export const getSearchStatus= (state)=>state.search.isLoading;
-export const getSearchError= (state)=>state.search.error;
 
-export const {getSearchInfo, clearTerm }= searchSlice.actions;
+export let selectResearch= (state)=>state.search;
+export const getQueryTerm= (state)=>state.search.query;
+
+export const {setQuery, clearQuery }= searchSlice.actions;
 export default searchSlice.reducer;
 
