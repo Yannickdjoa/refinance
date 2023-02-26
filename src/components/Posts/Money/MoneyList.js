@@ -3,6 +3,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import { NavLink } from 'react-router-dom';
 import { fetchMoneyPosts } from '../../../utils/Api';
 import { getMoneyError, getMoneyStatus, selectAllMoney } from './MoneySlice';
+import '../postsList.css';
 
 const MoneyList = () => {
     const money= useSelector(selectAllMoney);

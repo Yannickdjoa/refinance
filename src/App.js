@@ -3,9 +3,7 @@ import { Routes, Route } from 'react-router-dom';
 import './App.css';
 import NavBar from './components/generalComponents/navbar/NavBar';
 import { SideBar } from './components/generalComponents/SideBar/sideBar';
-import SearchPage from './components/Search/SearchPage';
-import { Profile } from "../src/components/pages/Profile";
-import { Contact } from "../src/components/pages/Contact";
+import SearchResults from './components/Search/SearchResults';
 
 import PostsList from "./components/Posts/CryptoMarket/PostsList";
 import BitcoinNewsList from './components/Posts/BitcoinNews/BitcoinNewsList';
@@ -24,6 +22,7 @@ import GamePage from './components/Posts/Game/GamePage';
 import InvestmentPage from './components/Posts/Investments/investmentPage';
 import InspirationPage from './components/Posts/Inspiration/InspirationPage';
 import MoneyPage from './components/Posts/Money/MoneyPage';
+import SearchPage from './components/Search/searchPage';
 
 import { selectAllPosts } from './components/Posts/CryptoMarket/CryptoMarketSlice';
 import { selectAllBitcoin } from './components/Posts/BitcoinNews/BitcoinSlice';
@@ -34,8 +33,7 @@ import { selectAllGame } from './components/Posts/Game/GameSlice';
 import { selectAllInvestments } from './components/Posts/Investments/investmentsSlice';
 import { selectAllInspiration } from './components/Posts/Inspiration/InspirationSlice';
 import { selectAllMoney } from './components/Posts/Money/MoneySlice';
-
-
+import { selectResearch } from './components/Search/researchSlice';
 
 function App() {
   const posts=useSelector(selectAllPosts);
@@ -46,6 +44,7 @@ function App() {
   const investments= useSelector(selectAllInvestments);
   const inspirations= useSelector(selectAllInspiration);
   const money= useSelector(selectAllMoney);
+  const searchPost= useSelector(selectResearch)
   return (
     <>
       <div className='navbar-container'>
@@ -54,9 +53,11 @@ function App() {
       <div className='sideBar-container'>
         <SideBar />
         <Routes>
-          <Route path="/searchPage" element={<SearchPage />} />
-          <Route path="/profile" element={<Profile />} />
-          <Route path="/contact" element={<Contact />} />
+          <Route path="/" element={<PostsList/>}/>
+          <Route path="/:search">
+            <Route index element={<SearchResults searchPost={searchPost}/>} />
+            <Route path=":searchId" element={<SearchPage searchPost={searchPost}/>} />
+          </Route>
           <Route path="/postsList">
             <Route index element={<PostsList posts={posts}/>}/>
             <Route path=":postId" element={<SinglePostPage posts={posts}/>} />
@@ -95,5 +96,6 @@ function App() {
     
   );
 }
+
 
 export default App;

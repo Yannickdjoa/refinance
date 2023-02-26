@@ -3,6 +3,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import { NavLink } from 'react-router-dom';
 import { fetchInvestmentsPosts } from '../../../utils/Api';
 import { getInvestmentsError, getInvestmentsStatus, selectAllInvestments } from './investmentsSlice';
+import '../postsList.css';
 
 const InvestmentsList = () => {
     const investments= useSelector(selectAllInvestments);

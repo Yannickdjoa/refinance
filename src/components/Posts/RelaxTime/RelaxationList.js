@@ -3,7 +3,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import { NavLink } from 'react-router-dom';
 import { fetchRelaxationPosts } from '../../../utils/Api';
 import { getRelaxationError, getRelaxationStatus, selectAllRelaxation } from './RealaxationSlice';
-import "./RelaxationList.css";
+import '../postsList.css';
 
 const RelaxationList = () => {
     const relaxation= useSelector(selectAllRelaxation);

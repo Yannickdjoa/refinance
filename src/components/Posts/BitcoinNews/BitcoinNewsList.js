@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import { fetchBitcoinPosts } from '../../../utils/Api';
-import "./BitcoinNewsList.css"
+import '../postsList.css';
 
 import { selectAllBitcoin, getBitcoinStatus, getBitcoinError } from './BitcoinSlice';
 

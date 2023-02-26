@@ -16,9 +16,7 @@ export const fetchPostsByTitle= createAsyncThunk(
     async ()=>{
         try {
             const response= await axios.get(POSTS_URL);
-
             return [...response.data.data.children];
-            
         } catch (error) {
             return error.message
         }
@@ -31,9 +29,7 @@ export const fetchBitcoinPosts= createAsyncThunk(
     async ()=>{
         try {
             const res= await axios.get(BITCOIN_URL);
-            console.log (res);
             return res.data.data.children;
-            
         } catch (error) {
             return error.message
         }
@@ -123,7 +119,7 @@ export const searchPosts= createAsyncThunk(
         const response2= await fetch(`https://www.reddit.com/subreddits/search.json?q=${query}&limit=25`);
         const data= await response2.json();
         console.log(data);
-        return data.data.children.map();
+        return data.data.children.map(post=>post.data);
     }
 )
 

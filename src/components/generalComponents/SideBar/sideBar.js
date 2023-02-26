@@ -13,7 +13,7 @@ export const SideBar= ({children}) => {
         <div className='conatainer'>
             <div style={{width: isOpen ? "220px" : "50px"}} className='sidebar-subref'>
                 <div className='subrefinance-btn'>
-                    <h1 style={{display: isOpen ? "block" : "none"}} className="subreddit-title">SubRefinance</h1>
+                    <NavLink to={'./'}><h1 style={{display: isOpen ? "block" : "none"}} className="subreddit-title">SubRefinance</h1></NavLink>
                     <div className='bars'>
                         <FaBars onClick={toggle}/>
                     </div>

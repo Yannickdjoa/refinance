@@ -1,6 +1,6 @@
-import React from 'react'
-
-import { useParams } from 'react-router-dom'
+import React from 'react';
+import { useParams } from 'react-router-dom';
+import '../postPage.css'
 
 const SinglePostPage = ({posts}) => {
     const {postId}= useParams();

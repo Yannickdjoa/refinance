@@ -3,6 +3,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import { NavLink } from 'react-router-dom';
 import { fetchInspirationPosts } from '../../../utils/Api';
 import { getInspirationError, getInspirationStatus, selectAllInspiration } from './InspirationSlice';
+import '../postsList.css';
 
 const InspirationList = () => {
     const inspirations= useSelector(selectAllInspiration);

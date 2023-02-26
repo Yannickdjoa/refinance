@@ -3,7 +3,7 @@ import { useSelector, useDispatch } from 'react-redux';
 import { selectAllPosts, getPostsError, getPostsStatus } from './CryptoMarketSlice';
 import { fetchPostsByTitle } from '../../../utils/Api';
 import { NavLink } from 'react-router-dom';
-import "./postsList.css";
+import '../postsList.css';
 
 
 const PostsList=()=>{

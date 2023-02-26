@@ -3,6 +3,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import { NavLink } from 'react-router-dom';
 import { fetchGamePosts } from '../../../utils/Api';
 import { getGameError, getGameStatus, selectAllGame } from './GameSlice';
+import '../postsList.css'
 
 const GameList = () => {
     const games= useSelector(selectAllGame);
