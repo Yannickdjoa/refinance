@@ -1,8 +1,8 @@
 import React, { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { NavLink } from 'react-router-dom';
-import { fetchGamePosts } from '../../../utils/Api';
-import { getGameError, getGameStatus, selectAllGame } from './GameSlice';
+import { fetchGamePosts } from '../../../utils/api';
+import { getGameError, getGameStatus, selectAllGame } from './gameSlice';
 import '../postsList.css'
 
 const GameList = () => {

@@ -1,5 +1,5 @@
 import { createSlice } from '@reduxjs/toolkit';
-import { searchPosts } from '../../utils/Api';
+import { searchPosts } from '../../utils/api';
 
 const searchSlice = createSlice({
     name:"search",

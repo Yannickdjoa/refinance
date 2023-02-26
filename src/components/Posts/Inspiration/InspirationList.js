@@ -1,8 +1,8 @@
 import React, { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { NavLink } from 'react-router-dom';
-import { fetchInspirationPosts } from '../../../utils/Api';
-import { getInspirationError, getInspirationStatus, selectAllInspiration } from './InspirationSlice';
+import { fetchInspirationPosts } from '../../../utils/api';
+import { getInspirationError, getInspirationStatus, selectAllInspiration } from './inspirationSlice';
 import '../postsList.css';
 
 const InspirationList = () => {

@@ -1,8 +1,8 @@
 import React, { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { NavLink } from 'react-router-dom';
-import { fetchMoneyPosts } from '../../../utils/Api';
-import { getMoneyError, getMoneyStatus, selectAllMoney } from './MoneySlice';
+import { fetchMoneyPosts } from '../../../utils/api';
+import { getMoneyError, getMoneyStatus, selectAllMoney } from './moneySlice';
 import '../postsList.css';
 
 const MoneyList = () => {

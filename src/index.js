@@ -6,7 +6,7 @@ import App from './app';
 import reportWebVitals from './reportWebVitals';
 import './index.css';
 import {  BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import { fetchPostsByTitle } from './utils/Api';
+import { fetchPostsByTitle } from './utils/api';
 
 const container = document.getElementById('root');
 const root = createRoot(container);

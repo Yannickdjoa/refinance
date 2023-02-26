@@ -1,8 +1,8 @@
 import React, { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { NavLink } from 'react-router-dom';
-import { fetchRealestatePosts } from '../../../utils/Api';
-import { getRealestateError, getRealestateStatus, selectAllRealestate } from './RealestateSlice';
+import { fetchRealestatePosts } from '../../../utils/api';
+import { getRealestateError, getRealestateStatus, selectAllRealestate } from './realestateSlice';
 import '../postsList.css';
 
 const RealestateList = () => {

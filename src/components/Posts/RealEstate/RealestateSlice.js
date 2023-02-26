@@ -1,5 +1,5 @@
 import { createSlice } from "@reduxjs/toolkit";
-import { fetchRealestatePosts } from "../../../utils/Api";
+import { fetchRealestatePosts } from "../../../utils/api";
 
 export const realestateSlice= createSlice({
     name:"realestate",

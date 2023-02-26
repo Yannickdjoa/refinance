@@ -1,8 +1,8 @@
 import React, {useEffect} from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { NavLink } from 'react-router-dom';
-import { fetchRelaxationPosts } from '../../../utils/Api';
-import { getRelaxationError, getRelaxationStatus, selectAllRelaxation } from './RealaxationSlice';
+import { fetchRelaxationPosts } from '../../../utils/api';
+import { getRelaxationError, getRelaxationStatus, selectAllRelaxation } from './realaxationSlice';
 import '../postsList.css';
 
 const RelaxationList = () => {

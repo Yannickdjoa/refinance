@@ -1,8 +1,8 @@
 import React, { useEffect } from 'react';
-import { fetchBitcoinPosts } from '../../../utils/Api';
+import { fetchBitcoinPosts } from '../../../utils/api';
 import '../postsList.css';
 
-import { selectAllBitcoin, getBitcoinStatus, getBitcoinError } from './BitcoinSlice';
+import { selectAllBitcoin, getBitcoinStatus, getBitcoinError } from './bitcoinSlice';
 
 import { useDispatch, useSelector } from 'react-redux';
 import { NavLink } from 'react-router-dom';

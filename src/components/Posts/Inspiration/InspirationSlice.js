@@ -1,5 +1,5 @@
 import { createSlice } from "@reduxjs/toolkit";
-import { fetchInspirationPosts } from "../../../utils/Api";
+import { fetchInspirationPosts } from "../../../utils/api";
 
 export const inspirationSlice= createSlice({
     name:"inspiration",

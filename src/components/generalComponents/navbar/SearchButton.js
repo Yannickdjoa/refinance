@@ -2,7 +2,7 @@ import { NavLink, useLocation } from 'react-router-dom';
 import {BiSearch} from 'react-icons/bi';
 import React, { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import { clearQuery, getQueryTerm, setQuery } from '../../Search/researchSlice';
+import { clearQuery, getQueryTerm, setQuery } from '../../search/researchSlice';
 import { useNavigate, createSearchParams } from 'react-router-dom';
 import './navbar.css';
 

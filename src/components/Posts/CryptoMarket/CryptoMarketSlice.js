@@ -1,5 +1,5 @@
 import { createSlice } from '@reduxjs/toolkit'
-import { fetchPostsByTitle } from '../../../utils/Api';
+import { fetchPostsByTitle } from '../../../utils/api';
 
 
 export const postsSlice = createSlice({

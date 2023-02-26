@@ -1,7 +1,7 @@
 import React, { useEffect }  from 'react';
 import { useSelector, useDispatch } from 'react-redux';
-import { selectAllPosts, getPostsError, getPostsStatus } from './CryptoMarketSlice';
-import { fetchPostsByTitle } from '../../../utils/Api';
+import { selectAllPosts, getPostsError, getPostsStatus } from './cryptoMarketSlice';
+import { fetchPostsByTitle } from '../../../utils/api';
 import { NavLink } from 'react-router-dom';
 import '../postsList.css';
 

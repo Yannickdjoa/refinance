@@ -1,5 +1,5 @@
 import { createSlice } from '@reduxjs/toolkit'
-import { fetchBitcoinPosts } from '../../../utils/Api';
+import { fetchBitcoinPosts } from '../../../utils/api';
 
 
 export const bitcoinSlice = createSlice({

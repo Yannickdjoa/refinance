@@ -1,5 +1,5 @@
 import { createSlice } from "@reduxjs/toolkit";
-import { fetchGamePosts } from "../../../utils/Api";
+import { fetchGamePosts } from "../../../utils/api";
 
 export const gameSlice= createSlice({
     name:"game",
