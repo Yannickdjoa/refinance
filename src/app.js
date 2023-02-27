@@ -1,8 +1,8 @@
 import React from 'react';
 import { Routes, Route } from 'react-router-dom';
 import './app.css';
-import NavBar from './components/generalComponents/navbar/navBar';
-import { SideBar } from './components/generalComponents/sideBar/sideBar';
+import NavBar from './components/general/navbar/navBar';
+import { SideBar } from './components/general/sidebar/sideBar';
 import SearchResults from './components/search/searchResults';
 
 import PostsList from "./components/post/cryptoMarket/PostsList";

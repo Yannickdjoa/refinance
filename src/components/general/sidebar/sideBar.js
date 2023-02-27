@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { NavLink } from "react-router-dom";
 import './sideBar.css';
-import { SideBarItems } from '../itemsList';
+import { SideBarItems } from '../itemList';
 import { FaBars } from "react-icons/fa";
 
 export const SideBar= ({children}) => {
