@@ -1,12 +1,12 @@
 import { configureStore } from '@reduxjs/toolkit';
-import postsReducer from "../components/Posts/cryptoMarket/cryptoMarketSlice";
-import bitcoinReducer from "../components/Posts/bitcoinNews/bitcoinSlice";
-import relaxationReducer from "../components/Posts/relaxTime/realaxationSlice";
-import realestateReducer from '../components/Posts/realEstate/realestateSlice';
-import gameReducer from '../components/Posts/game/gameSlice';
-import inspirationReducer from '../components/Posts/inspiration/inspirationSlice';
-import investmentsReducer from '../components/Posts/investments/investmentsSlice';
-import moneyReducer from '../components/Posts/money/moneySlice';
+import postsReducer from "../components/post/cryptoMarket/cryptoMarketSlice";
+import bitcoinReducer from "../components/post/bitcoinNews/bitcoinSlice";
+import relaxationReducer from "../components/post/relaxtime/realaxationSlice";
+import realestateReducer from '../components/post/realestate/realestateSlice';
+import gameReducer from '../components/post/game/gameSlice';
+import inspirationReducer from '../components/post/inspiration/inspirationSlice';
+import investmentsReducer from '../components/post/investments/investmentsSlice';
+import moneyReducer from '../components/post/money/moneySlice';
 
 import searchReducer from "../components/search/researchSlice";
 
