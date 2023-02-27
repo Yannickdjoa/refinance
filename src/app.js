@@ -1,12 +1,12 @@
 import React from 'react';
 import { Routes, Route } from 'react-router-dom';
 import './app.css';
-import NavBar from './components/generalComponents/navbar/NavBar';
-import { SideBar } from './components/generalComponents/SideBar/sideBar';
+import NavBar from './components/generalComponents/navbar/navBar';
+import { SideBar } from './components/generalComponents/sideBar/sideBar';
 import SearchResults from './components/search/searchResults';
 
 import PostsList from "./components/post/cryptoMarket/PostsList";
-import BitcoinNewsList from './components/Posts/BitcoinNews/BitcoinNewsList';
+import BitcoinNewsList from './components/post/bitcoinNews/bitcoinNewsList';
 import RelaxationList from './components/post/relaxtime/relaxationList';
 import RealestateList from "./components/post/realestate/realestateList";
 import GameList from "./components/post/game/gameList";
@@ -33,7 +33,7 @@ import { selectAllGame } from './components/post/game/gameSlice';
 import { selectAllInvestments } from './components/post/investments/investmentsSlice';
 import { selectAllInspiration } from './components/post/inspiration/inspirationSlice';
 import { selectAllMoney } from './components/post/money/moneySlice';
-import { selectResearch } from './components/Search/researchSlice';
+import { selectResearch } from './components/search/researchSlice';
 
 function App() {
   const posts=useSelector(selectAllPosts);

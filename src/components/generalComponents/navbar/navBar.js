@@ -1,7 +1,7 @@
 import { FaRedditAlien } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import "./navbar.css";
-import {SearchButton} from "./SearchButton";
+import {SearchButton} from "./searchButton";
 
 const NavBar= ()=> {
 
